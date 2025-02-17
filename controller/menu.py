@@ -3,7 +3,7 @@ from rich.panel import Panel
 from rich.text import Text
 from rich.prompt import Prompt
 from config.app import App
-from controller.function import GenerateCustomReport, Gestiondepostal, GetDataSourceProductos, IngestDataProducts
+from controller.function import GenerateCustomReport, Gestionpostal, GetDataSourceProductos, IngestDataProducts
 from controller.report import GenerateReportVentas
 from modelos.model import *
 
@@ -40,7 +40,7 @@ def menu(app: App):
                 GenerateCustomReport(app)
             elif opcion == "4":
                 console.print("[cyan]📊 Ingesta Datos del Postal....[/cyan]")
-                Gestiondepostal(app)
+                Gestionpostal(app)
             elif opcion == "5":
                 console.print("[yellow]📦 Generando Productos.......[/yellow]")
                 GetDataSourceProductos(app)

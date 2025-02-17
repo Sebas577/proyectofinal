@@ -27,7 +27,7 @@ def IngestDataProducts(app:App):
     insertManyVentas(bd,dataVentas)
     generarIndicadores(bd,dataCategories)
     GenerateCustomReport(bd,dataProducts)
-    Gestiondepostal(bd,dataPostalCode)
+    Gestionpostal(bd,dataPostalCode)
     
 
 
@@ -72,7 +72,7 @@ def GenerateCustomReport(app:App):
 
 
 console = Console()
-def Gestiondepostal(app):
+def Gestionpostal(app):
     try:
         console.rule("[bold cyan]🔍 Iniciando proceso de Gestión de Códigos Postales")
 
